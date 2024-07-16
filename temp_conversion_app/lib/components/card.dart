@@ -46,7 +46,8 @@ class _MyCardState extends State<MyCard> {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.symmetric(horizontal: 17.0),
+          // margin:Edg,
           child: Center(
             child: SizedBox(
               height: 450,
@@ -176,7 +177,7 @@ class _MyCardState extends State<MyCard> {
                       ),
                       const SizedBox(height: 8),
                       Expanded(
-                        child: Container(
+                        child: SizedBox(
                           height: 150,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
@@ -208,7 +209,7 @@ class _MyCardState extends State<MyCard> {
                   ),
                 ),
               ),
-            ),
+            )
           ),
         ),
       ),
