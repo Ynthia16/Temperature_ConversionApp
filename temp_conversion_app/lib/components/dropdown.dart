@@ -25,6 +25,9 @@ class _DropdownMenuExampleState extends State<DropdownMenuExample> {
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
+      dropdownColor: Colors.black,
+      style: const TextStyle(
+          fontSize: 13, color: Color.fromARGB(255, 212, 212, 212)),
       value: dropdownValue,
       onChanged: (String? newValue) {
         setState(() {
